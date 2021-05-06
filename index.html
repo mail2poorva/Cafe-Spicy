@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="images/android-chrome-512x512.png">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div>
+        <button class="reservationBtn" onclick="toggle()">Reservation</button>
+    </div>
+
+
+    <div id="popup">
+        <h1 id="popup-heading">Book a Table</h1>
+        <button id="popup-btn" class="register-exit" onclick="toggle()">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+
+        <img src="https://images.unsplash.com/photo-1510523293781-b2cd54eaeac0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="" id="popup-img" />
+        <div id="popup-content">
+            <div class="form">
+                <input type="text" name="name" autocomplete="off" required />
+                <label for="name" class="label-name">
+              <span class="content-name">Name</span>
+            </label>
+            </div>
+            <div class="form">
+                <input type="text" name="name" autocomplete="off" required />
+                <label for="name" class="label-name">
+              <span class="content-name">Email</span>
+            </label>
+            </div>
+            <div class="form">
+                <input type="number" name="name" autocomplete="off" required />
+                <label for="name" class="label-name">
+              <span class="content-name">Contact Number</span>
+            </label>
+            </div>
+            <div class="form">
+                <input type="text" name="name" autocomplete="off" required />
+                <label for="name" class="label-name">
+              <span class="content-name">No of Persons</span>
+            </label>
+            </div>
+        </div>
+        <button type="submit" id="popup-submit">Submit</button>
+    </div>
+
+    <section id="blur">
+        <header class="header">
+            <!-- <h1>Cafe Spicy</h1> -->
+            <img src="https://www.freelogoservices.com/api/main/images/1j+ojFVDOMkX9Wytexe43D6kifCGrB9MkRjIwXs1M3EMoAJtliAuhfdq9P8..." alt="" class="header_logo" />
+
+            <nav>
+                <div id="navbar">
+                    <img src="https://www.freelogoservices.com/api/main/images/1j+ojFVDOMkX9Wytexe43D6kifCGrBBKmh7IwXs1M3EMoAJtliAuhfZj9fUy" alt="" id="navbar_logo" />
+                    <a href="index.html" id="logo">Cafe Spicy </a>
+                    <div id="navbar-right">
+                        <a class="active" href="index.html">Home</a>
+                        <a href="#contact">Contact</a>
+                        <a href="cart/cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </nav>
+
+            <section class="header-section-1">
+                <h1 class="header-section-1_h1">
+                    Welcome to our <br />
+                    <span>Restaurant</span>
+                </h1>
+                <img src="https://www.freelogodesign.org/file/app/client/thumb/ea12c1d8-6e40-439a-b921-91e0d6893c3b_200x200.png?1603475099743" alt="" class="header-section-1-img" />
+                <p class="header-section-1_p" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit mollitia laboriosam eius. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est eius quae officia esse et dicta. Lorem ipsum dolor sit amet consectetur adipisicing Lorem,
+                    ipsum dolor sit amet consectetur adipisicing elit. Sit, asperiores? elit. Fuga aliquam id harum voluptatibus!
+                </p>
+            </section>
+        </header>
+
+        <section class="section-2">
+            <h1 class="section-2-heading" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">We keep cherishing you with our meals</h1>
+            <div class="section-2-main-1" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <img src="images/image-8.jpg" alt="" class="section-2-img section-2-img-1" />
+            </div>
+            <div class="section-2-main-2" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <img src="images/image7.jpg" alt="" class="section-2-img section-2-img-2" />
+            </div>
+            <div class="section-2-main-3" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <img src="images/image-2.jpg" alt="" class="section-2-img section-2-img-3" />
+            </div>
+            <div class="section-2-main-4" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <img src="images/image-6.jpg" alt="" class="section-2-img section-2-img-4" />
+            </div>
+            <p class="section-2-para" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nam quod consequatur! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab ut nisi deleniti.
+            </p>
+
+            <button class="section-2-btn" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">Explore our menu</button>
+        </section>
+
+        <section class="section-3">
+            <h3 data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">No of orders taking daily</h3>
+            <div>
+                <p>
+                    <span data-purecounter-start="100" data-purecounter-end="13205" data-purecounter-once="true" class="purecounter section-3-counter">0</span
+            >
+          </p>
+        </div>
+      </section>
+      <h1 class="section-4-heading" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">
+        Why Choose <br />
+        <span>Our Restaurant</span>
+                    </h1>
+                    <section class="section-4">
+                        <div class="section-4-card section-4-card-1" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <img src="https://www.freelogodesign.org/file/app/client/thumb/a9c4b5f5-726c-4fe6-b209-901acab45f6f_200x200.png?1603826730070" alt="" class="section-4-card-img" />
+                            <p class="section-4-card-heading">
+                                Friendly <br /> Staff
+                            </p>
+                            <!-- <p class="section-4-card-para">Lorem ipsum dolor sit amet consectetur adipisicing elit..</p> -->
+                        </div>
+                        <div class="section-4-card section-4-card-1" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <img src="https://www.freelogodesign.org/file/app/client/thumb/86694f06-e219-429c-a827-9072004b892a_200x200.png?1603826616328" alt="" class="section-4-card-img" />
+                            <p class="section-4-card-heading">
+                                Delicious <br /> Food
+                            </p>
+                            <!-- <p class="section-4-card-para">Lorem ipsum dolor sit amet consectetur adipisicing eli.</p> -->
+                        </div>
+                        <div class="section-4-card section-4-card-1" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <img src="https://www.freelogodesign.org/file/app/client/thumb/6466f44b-e44a-43a8-9dca-b9adf45837de_200x200.png?1603827129664" alt="" class="section-4-card-img" />
+                            <p class="section-4-card-heading">
+                                High quality <br /> products
+                            </p>
+                            <!-- <p class="section-4-card-para">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+                        </div>
+                        <div class="section-4-card section-4-card-1" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <img src="https://www.freelogodesign.org/file/app/client/thumb/ec228aa5-4d95-4c5d-84e0-a65422cae835_200x200.png?1603827308461" alt="" class="section-4-card-img" />
+                            <p class="section-4-card-heading">
+                                Soothing <br /> Environment
+                            </p>
+                            <!-- <p class="section-4-card-para">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+                        </div>
+                    </section>
+
+                    <section class="section-5">
+                        <h1 class="section-5-heading section-4-heading" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            Today's Our <br />
+                            <span>Special Offers</span>
+                        </h1>
+                        <div class="container">
+                            <div class="card" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                                <div class="card__heading">
+                                    <p>BREAKFAST</p>
+                                    <span> Only at $11</span>
+                                </div>
+                                <div class="card__img">
+                                    <img src="https://images.unsplash.com/photo-1506084868230-bb9d95c24759?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="" />
+                                </div>
+                                <div class="card__content">
+                                    <h2>Includes</h2>
+                                    <ul>
+                                        <li>Lorem ipsum dolor</li>
+                                        <hr />
+                                        <li>Lorem ipsum dolor</li>
+                                        <hr />
+                                        <li>Lorem ipsum dolor</li>
+                                        <hr />
+                                        <li>Lorem ipsum dolor</li>
+                                    </ul>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+
+                            <div class="card" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                                <div class="card__heading">
+                                    <p>Lunch</p>
+                                    <span> Only at $15</span>
+                                </div>
+                                <div class="card__img">
+                                    <img src="https://images.unsplash.com/photo-1488900128323-21503983a07e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="" />
+                                </div>
+                                <div class="card__content">
+                                    <h2 class="card__content-h2">Includes</h2>
+                                    <ul class="card__content-ul">
+                                        <li>Lorem ipsum dolor</li>
+                                        <hr />
+                                        <li>Lorem ipsum dolor</li>
+                                        <hr />
+                                        <li>Lorem ipsum dolor</li>
+                                        <hr />
+                                        <li>Lorem ipsum dolor</li>
+                                    </ul>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+
+                            <div class="card" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                                <div class="card__heading">
+                                    <p>Dinner</p>
+                                    <span> Only at $16</span>
+                                </div>
+                                <div class="card__img">
+                                    <img src="https://images.unsplash.com/photo-1565060218114-26c6c9978e4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80" alt="" />
+                                </div>
+                                <div class="card__content">
+                                    <h2>Includes</h2>
+                                    <ul>
+                                        <li>Lorem ipsum dolor</li>
+                                        <hr />
+                                        <li>Lorem ipsum dolor</li>
+                                        <hr />
+                                        <li>Lorem ipsum dolor</li>
+                                        <hr />
+                                        <li>Lorem ipsum dolor</li>
+                                    </ul>
+                                    <button class="order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section-6" id="contact">
+                        <div class="section-6-parallax">
+                            <h1 class="section-6-heading section-4-heading" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                                Contact <br><span>Information</span>
+                            </h1>
+
+                            <div class="section-6-content">
+                                <!-- card -->
+                                <div class="section-card" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+
+                                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                                    <p class="title">Contacts</p>
+                                    <p class="text">Click to see or edit your profile page.</p>
+
+                                </div>
+                                <!-- end card -->
+                                <!-- card -->
+                                <div class="section-card" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+
+                                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                                    <p class="title">Our location</p>
+                                    <p class="text">Check all your favourites in one place.</p>
+
+                                </div>
+                                <!-- end card -->
+                                <!-- card -->
+                                <div class="section-card" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+
+                                    <div class="icon"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+                                    <p class="title">Opening hours</p>
+                                    <p class="text">Add or change your contacts and links.</p>
+
+                                </div>
+                                <!-- end card -->
+                            </div>
+
+                        </div>
+                    </section>
+                    <section class="section-7">
+                        <div class="section-7-copyright">
+                            <p>2019 &#169; Copyright , All rights reserved to us.</p>
+                        </div>
+                        <div class="section-7-info">
+                            <ul>
+                                <li>Contact Us</li>
+                                <li>Disclaimer</li>
+                                <li>Support</li>
+                                <li>Privacy Policy</li>
+                            </ul>
+                        </div>
+                        <div class="section-7-social">
+                            <ul>
+                                <a href="#">
+                                    <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-pinterest-p" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-youtube-play" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                                </a>
+                            </ul>
+                        </div>
+                    </section>
+        </section>
+        <script src="Javascript/home.js"></script>
+        <script src="Javascript/odometer.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+</body>
+
+</html>

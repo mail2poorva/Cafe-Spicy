@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PureCounter Example</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="icon" href="../images/android-chrome-512x512.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/fontawesome.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+
+
+    <section class="section-bg">
+
+        <img src="https://images.unsplash.com/photo-1546039907-7fa05f864c02?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="" class="section-bg-img">
+        <img src="https://images.unsplash.com/photo-1550950158-d0d960dff51b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="" class="section-bg-img">
+        <img src="https://images.unsplash.com/photo-1509482560494-4126f8225994?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="" class="section-bg-img">
+        <img src="https://images.pexels.com/photos/2955819/pexels-photo-2955819.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="section-bg-img">
+        <img src="https://images.pexels.com/photos/4692165/pexels-photo-4692165.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" class="section-bg-img">
+        <img src="https://images.unsplash.com/photo-1544164559-2e64cabb6bc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="" class="section-bg-img">
+        <img src="https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="" class="section-bg-img">
+        <img src="https://images.unsplash.com/photo-1567460074231-1e038921a459?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="" class="section-bg-img">
+
+        <nav>
+            <div id="navbar">
+                <img src="https://www.freelogoservices.com/api/main/images/1j+ojFVDOMkX9Wytexe43D6kifCGrBBKmh7IwXs1M3EMoAJtliAuhfZj9fUy" alt="" id="navbar_logo" />
+                <a href="../index.html" id="logo">Cafe Spicy </a>
+                <div id="navbar-right">
+                    <a class="active" href="../index.html">Home</a>
+                    <a href="../index.html#contact">Contact</a>
+
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                </div>
+            </div>
+        </nav>
+        <div class="body">
+
+
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+
+                <div class="cart">
+                    <h2 class="cart-heading">My Cart</h2>
+                    <!-- <button class="cart-btn"><img src="https://www.freelogoservices.com/api/main/images/1j+ojFVDOMkX9Wytexe43D6kifCHqRJKmR3IwXs1M3EMoAJtliAugfpt8vQ9" alt="" class="cart-img"></button> -->
+
+                    <ul class="cart-list">
+                        <li>Item Name</li>
+                        <li>Quantity</li>
+                        <li>Price/item</li>
+                        <li style="opacity: 0;">Price</li>
+                    </ul>
+                    <div class="bill">
+                    </div>
+                    <button class="purchase">Checkout Amount : $<span class="totalAmt"></span> <strong>.00</strong> </button>
+                </div>
+
+            </div>
+
+            <div class="tabs">
+                <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span> -->
+                <div class="tab-header">
+                    <div class="active"><i class="fas fa-pizza-slice"></i> Starters
+                    </div>
+                    <div> <i class="fas fa-wine-glass-alt"></i> Beverages
+                    </div>
+                    <div> <i class="fas fa-birthday-cake"></i> Desserts
+                    </div>
+                    <div> <i class="fas fa-mug-hot"></i> Coffee
+                    </div>
+                </div>
+
+
+                <div class="tab-indicator"></div>
+                <div class="tab-body">
+
+
+
+                    <div class="active" id="starters">
+                        <table>
+
+                            <tr class="item-row" style="padding-bottom: 80px;">
+                                <td width=150px>
+
+                                    <img src="https://images.immediate.co.uk/production/volatile/sites/2/2017/08/Tomato-Cover-V2.jpg?quality=45&resize=768,574" alt=""></td>
+                                <td>
+                                    <h2>Pizza</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita sit quaerat autem?
+                                    </p>
+                                </td>
+                                <td class="row-button">
+                                    <button class="btn decorationBtn" id="1">Add to Cart</button><br><span>12.00 $</span> </td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="https://www.cookwithmanali.com/wp-content/uploads/2014/11/Hakka-Noodles-1-500x500.jpg" alt=""></td>
+                                <td>
+                                    <h2>Noodles</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita sit quaerat autem?
+                                    </p>
+                                </td>
+                                <td class="row-button">
+                                    <button class="btn decorationBtn" id="2">Add to Cart</button><br><span>13.00$</span></td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="https://www.readersdigest.ca/wp-content/uploads/2015/11/gourmet-burger-scaled.jpg" alt=""></td>
+                                <td>
+                                    <h2>Burger</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita sit quaerat autem?
+                                    </p>
+                                </td>
+                                <td class="row-button">
+                                    <button class="btn decorationBtn" id="3">Add to Cart</button><br><span>14.00$</span></td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="https://www.whiskaffair.com/wp-content/uploads/2015/06/Spring-Roll-5.jpg" alt="">
+                                </td>
+                                <td>
+                                    <h2>Spring Rolls</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita sit quaerat autem?
+                                    </p>
+                                </td>
+                                <td class="row-button">
+                                    <button class="btn decorationBtn" id="4">Add to Cart</button><br><span>15.00$</span></td>
+                            </tr>
+
+
+
+                        </table>
+                    </div>
+
+
+                    <div id="dessert">
+                        <table>
+                            <tr>
+                                <td width=150px>
+
+                                    <img src="https://i.ndtvimg.com/i/2017-09/mojito_620x330_71504864836.jpg" alt=""></td>
+                                <td>
+                                    <h2>Mojito</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita sit quaerat autem?
+                                    </p>
+                                </td>
+                                <td class="row-button">
+                                    <button class="btn decorationBtn">Add to Cart</button><br><span>12.00$</span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="https://i.ndtvimg.com/i/2015-04/margarita_625x350_61427975955.jpg" alt="">
+                                </td>
+                                <td>
+                                    <h2>Margrita</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita sit quaerat autem?
+                                    </p>
+                                </td>
+                                <td class="row-button">
+                                    <button class="btn decorationBtn">Add to Cart</button><br><span>13.00$</span></td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="https://i.ndtvimg.com/i/2015-04/bloody-mary_625x350_71427963918.jpg" alt="">
+                                </td>
+                                <td>
+                                    <h2>Bloody Mary</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita sit quaerat autem?
+                                    </p>
+                                </td>
+                                <td class="row-button">
+                                    <button class="btn decorationBtn">Add to Cart</button><br><span>14.00$</span></td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="https://i.ndtvimg.com/i/2017-07/moscow-mule_620x330_41501221772.jpg" alt="">
+                                </td>
+                                <td>
+                                    <h2>Moscow Mule</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita sit quaerat autem?
+                                    </p>
+                                </td>
+                                <td class="row-button">
+                                    <button class="btn decorationBtn">Add to Cart</button><br><span>15.00$</span></td>
+                            </tr>
+
+
+
+                        </table>
+                    </div>
+
+
+                    <div id="drink">
+                        <table>
+                            <tr style="padding-bottom: 80px;">
+                                <td width=150px>
+
+                                    <img src="https://i.ndtvimg.com/i/2015-09/apple-pie-ice-cream-625_625x350_81443595158.jpg" alt=""></td>
+                                <td>
+                                    <h2>Apple Pie</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita sit quaerat autem?
+                                    </p>
+                                </td>
+                                <td class="row-button">
+                                    <button class="btn decorationBtn">Add to Cart</button><br><span>12.00$</span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="https://i.ndtvimg.com/i/2015-09/almond-kulfi-625_625x350_61443596643.jpg" alt=""></td>
+                                <td>
+                                    <h2>Malai Almond Kulfi</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita sit quaerat autem?
+                                    </p>
+                                </td>
+                                <td class="row-button">
+                                    <button class="btn decorationBtn">Add to Cart</button><br><span>13.00$</span></td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="https://i.ndtvimg.com/i/2015-09/tiramisu-625_625x350_41443596307.jpg" alt="">
+                                </td>
+                                <td>
+                                    <h2>Tiramisu</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita sit quaerat autem?
+                                    </p>
+                                </td>
+                                <td class="row-button">
+                                    <button class="btn decorationBtn">Add to Cart</button><br><span>14.00$</span> </td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="https://i.ndtvimg.com/i/2015-09/chocolate-mousse-625_625x350_81443596685.jpg" alt="">
+                                </td>
+                                <td>
+                                    <h2>Chocolate Mousse</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita sit quaerat autem?
+                                    </p>
+                                </td>
+                                <td class="row-button">
+                                    <button class="btn decorationBtn">Add to Cart</button><br><span>15.00$</span> </td>
+                            </tr>
+                        </table>
+                    </div>
+
+
+                    <div id="coffee">
+                        <table>
+                            <tr>
+                                <td width=150px>
+
+                                    <img src="https://www.baristainstitute.com/sites/default/files/styles/1x_width_50_wysiwyg/public/images/Caffe_Latte.jpg?itok=mtYWCjIT" alt=""></td>
+                                <td>
+                                    <h2>Caffe Latte</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita sit quaerat autem?
+                                    </p>
+                                </td>
+                                <td class="row-button">
+                                    <button class="btn decorationBtn">Add to Cart</button><br><span>12.00$</span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="https://www.baristainstitute.com/sites/default/files/styles/1x_width_50_wysiwyg/public/images/cappuccino_0.jpg?itok=dQhJnOG_" alt=""></td>
+                                <td>
+                                    <h2>Cappuccino</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita sit quaerat autem?
+                                    </p>
+                                </td>
+                                <td class="row-button">
+                                    <button class="btn decorationBtn">Add to Cart</button><br><span>13.00$</span> </td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="https://www.baristainstitute.com/sites/default/files/styles/1x_width_50_wysiwyg/public/images/espresso.jpg?itok=7Vwvs6f9" alt=""></td>
+                                <td>
+                                    <h2>Espresso</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita sit quaerat autem?
+                                    </p>
+                                </td>
+                                <td class="row-button">
+                                    <button class="btn decorationBtn">Add to Cart</button><br><span>14.00$</span> </td>
+                            </tr>
+
+                            <tr>
+                                <td><img src="https://www.baristainstitute.com/sites/default/files/styles/1x_width_50_wysiwyg/public/images/Frappe.jpg?itok=nsitCEUF" alt="">
+                                </td>
+                                <td>
+                                    <h2>Frappe</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita sit quaerat autem?
+                                    </p>
+                                </td>
+                                <td class="row-button">
+                                    <button class="btn decorationBtn">Add to Cart</button><br><span>15.00$</span> </td>
+                            </tr>
+                        </table>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="cart.js"></script>
+</body>
+
+</html>
