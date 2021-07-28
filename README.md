@@ -54,8 +54,8 @@
    - Sass(Extension of CSS)
 3. Vanilla JS
 4. Libraries of JS
-   - Data AOS "https://michalsnik.github.io/aos/"
-   - Odometer "https://github.hubspot.com/odometer/docs/welcome/"
+   - [Data AOS] (https://michalsnik.github.io/aos/)
+   - [Odometer] (https://github.hubspot.com/odometer/docs/welcome/)
   
 
 
